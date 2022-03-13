@@ -8,10 +8,11 @@ export const GlobalStyles = createGlobalStyle`
     --text: #1B2021;
     --text-light: #1B202177;
 
-    --background: rgba(255, 255, 255, 1);
+    --background: rgba(255, 255, 255, .5);
 
     --primary-dark: rgba(39, 24, 126, 1);
     --primary-light: rgba(117, 139, 253, 1);
+    --primary-light-op: rgba(117, 139, 253, .6);
 
     --secondary: rgba(255, 203, 71, 1);
   }
@@ -82,6 +83,18 @@ export const GlobalStyles = createGlobalStyle`
     0% {
       opacity: 0;
       transform: translateX(50px) ;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0px) ;
+    }
+  }
+
+  @keyframes fadeLtr {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px) ;
     }
 
     100% {

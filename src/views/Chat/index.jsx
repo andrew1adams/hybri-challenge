@@ -1,7 +1,7 @@
 import { Sidebar } from 'components';
 import { Container } from './style';
 
-const Home = () => {
+const Chat = () => {
   return (
     <Container>
       <Sidebar />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Chat;

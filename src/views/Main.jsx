@@ -2,7 +2,7 @@ import { Waves } from 'assets';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { userState } from 'store/slices/user';
-import { Login, Register, Home } from 'views';
+import { Login, Register, Chat } from 'views';
 import { Container } from './style';
 
 const Main = () => {
@@ -14,7 +14,7 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </Container>
   );

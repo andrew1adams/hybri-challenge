@@ -1,6 +1,6 @@
 import Login from './Login';
 import Register from './Register';
 import Main from './Main';
-import Home from './Home';
+import Chat from './Chat';
 
-export { Login, Main, Register, Home };
+export { Login, Main, Register, Chat };

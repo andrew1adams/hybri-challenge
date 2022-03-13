@@ -28,7 +28,7 @@ const EntryForm = () => {
           const { user } = response;
           if (response.success) {
             dispatch(userLogin(user));
-            navigate('/home');
+            navigate('/chat');
             break;
           }
         } catch (SignUpError) {
@@ -47,7 +47,7 @@ const EntryForm = () => {
 
           if (response.success) {
             dispatch(userLogin(user));
-            navigate('/home');
+            navigate('/chat');
             break;
           }
         } catch (SignInError) {
