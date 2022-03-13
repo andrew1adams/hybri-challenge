@@ -1,17 +1,17 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { AuthService } from 'services';
 
-const createAccount = async (currUser) => {
-  return await createUserWithEmailAndPassword(
+const loginAccount = async (currUser) => {
+  return await signInWithEmailAndPassword(
     AuthService,
     currUser.email,
     currUser.password
   );
 };
 
-const SignUpService = async (currUser) => {
+const SignInService = async (currUser) => {
   try {
-    const { user } = await createAccount(currUser);
+    const { user } = await loginAccount(currUser);
     return {
       success: true,
       user,
@@ -24,4 +24,4 @@ const SignUpService = async (currUser) => {
   }
 };
 
-export default SignUpService;
+export default SignInService;

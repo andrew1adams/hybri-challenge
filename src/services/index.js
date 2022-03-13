@@ -1,4 +1,5 @@
-import AuthService from './authentication';
+import { AuthService, UserAlreadyAuth } from './authentication';
 import SignUpService from './signUp';
+import SignInService from './signIn';
 
-export { AuthService, SignUpService };
+export { AuthService, UserAlreadyAuth, SignUpService, SignInService };

@@ -1,7 +1,7 @@
 import { Container } from './style';
 
-const Button = () => {
-  return <Container>Button</Container>;
+const Button = (props) => {
+  return <Container {...props} />;
 };
 
 export default Button;

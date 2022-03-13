@@ -3,4 +3,6 @@ import { FirebaseApp } from 'services/firebase';
 
 const AuthService = getAuth(FirebaseApp);
 
-export default AuthService;
+const UserAlreadyAuth = AuthService.onAuthStateChanged;
+
+export { AuthService, UserAlreadyAuth };
