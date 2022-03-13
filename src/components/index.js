@@ -1,7 +1,9 @@
-import Box from './Box';
 import Button from './Button';
-import Form from './Form';
+import EntryForm from './EntryForm';
 import Input from './Input';
 import Paper from './Paper';
+import Sidebar from './Sidebar';
+import Loading from './Wrappers/Loading';
+import Channels from './Channels';
 
-export { Box, Button, Form, Input, Paper };
+export { Button, EntryForm, Input, Paper, Sidebar, Loading, Channels };
