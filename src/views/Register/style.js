@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  animation: fadeRtl 1s ease-in-out;
+  animation: fadeRtl 1.5s ease-in-out;
   min-width: 320px;
   margin: 0 auto;
 

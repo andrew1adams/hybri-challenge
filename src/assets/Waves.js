@@ -59,6 +59,10 @@ const Wrapper = styled.div`
   position: relative;
   height: 100vh;
   width: 35%;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 const Waves = () => {
   const { isLogged } = useSelector(userState);
