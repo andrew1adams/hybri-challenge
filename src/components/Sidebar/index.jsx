@@ -1,8 +1,9 @@
-import { Channels, Button } from 'components';
+import { Button } from 'components';
 import { Container } from './style';
 import { TiWavesOutline } from 'react-icons/ti';
 import { useNavigate } from 'react-router-dom';
 import { BsBoxArrowInLeft } from 'react-icons/bs';
+import Channels from './Channels';
 
 // redux
 import { useDispatch, useSelector } from 'react-redux';

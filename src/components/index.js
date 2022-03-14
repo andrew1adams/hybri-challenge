@@ -4,6 +4,6 @@ import Input from './Input';
 import Paper from './Paper';
 import Sidebar from './Sidebar';
 import Loading from './Wrappers/Loading';
-import Channels from './Channels';
+import ChatBox from './ChatBox';
 
-export { Button, EntryForm, Input, Paper, Sidebar, Loading, Channels };
+export { Button, EntryForm, Input, Paper, Sidebar, Loading, ChatBox };

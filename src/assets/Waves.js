@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux';
 import { userState } from 'store/slices/user';
 import styled from 'styled-components';
-import waveOne from 'assets/images/wave-one.svg';
-import waveTwo from 'assets/images/wave-two.svg';
+import { waveOne, waveTwo } from 'assets/images';
 
 const Container = styled.div`
   transition: all 0.5s ease-in-out;
@@ -24,10 +23,6 @@ const Container = styled.div`
     100% {
       background-position-y: 0px;
     }
-  }
-
-  @media (max-width: 900px) {
-    display: none;
   }
 
   @keyframes fadeRtlW {
@@ -52,6 +47,10 @@ const Container = styled.div`
       opacity: 1;
       transform: translateX(0px) scaleX(-1);
     }
+  }
+
+  @media (max-width: 900px) {
+    display: none;
   }
 `;
 
