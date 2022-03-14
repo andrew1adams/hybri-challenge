@@ -42,6 +42,10 @@ export const Container = styled.div`
       gap: 10px;
       align-items: center;
 
+      button {
+        border: 1px solid var(--background);
+      }
+
       span {
         display: flex;
         letter-spacing: 0.05rem;
@@ -59,16 +63,14 @@ export const Container = styled.div`
     .content-wrapper {
       min-height: 100vh;
       position: relative;
-      transform: translateX(-100%) scaleX(0);
+      transform: translateX(-100%);
       transition: all 0.5s ease-in-out;
       border-radius: 0;
-      opacity: 0;
 
       ${({ menuOpen }) =>
         menuOpen &&
         css`
-          opacity: 1;
-          transform: translateX(0%) scaleX(1);
+          transform: translateX(0%);
         `};
     }
 
@@ -80,6 +82,7 @@ export const Container = styled.div`
       top: 15px;
       transition: all 0.5s ease-in-out;
       transform: translateX(-225px);
+      cursor: pointer;
 
       ${({ menuOpen }) =>
         menuOpen &&
