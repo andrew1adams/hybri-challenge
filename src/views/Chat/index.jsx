@@ -1,10 +1,11 @@
-import { Sidebar } from 'components';
+import { ChatBox, Sidebar } from 'components';
 import { Container } from './style';
 
 const Chat = () => {
   return (
     <Container>
       <Sidebar />
+      <ChatBox />
     </Container>
   );
 };
